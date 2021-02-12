@@ -92,9 +92,38 @@
             <p class="middleText">Explore, Imagine, Create</p>		
 		</div>
         <div class="middleElements">
-		<input class="middleButtons1" type="button" value="All Posts">
-		<input class="middleButtons2" type="button" value="Create Post">
-		</div>		
+		  <input class="middleButtons1" type="button" value="All Posts">
+		 
+		  <!--trigger the Create Post modal -->
+		  <input class="middleButtons2" id="createPost" type="button" value="Create Post">
+		</div>   
+		  <!-- The Modal -->
+            <div id="createPostModal" class="createPostModal">
+			<!-- Modal content -->
+               <div class="modal-content-createPost">
+				   <div class="modal-header-createPost">
+                        <h1 class="modal-title" id="exampleModalLabel1">Pen Your Post</h1>
+                        <span class="close" aria-hidden="true">&times;</span>
+                        </button>
+						
+                   </div>
+				   <div class="modal-body">
+                        <form>
+                                <div class="form-group-createPost">
+                                  <label class="formLabel">title</label>
+                                  <input type="text" id="postTitle" placeholder="Enter title of your post">
+                                </div>
+                                <div class="form-group-createPost">
+                                  <label class="formLabel">Contents</label>
+                                  <textarea class="postArea" placeholder="Enter the contents of your post"></textarea>
+                                </div>
+                                <button type="submit" class="submitCreatePost" id="createPost">Create</button>
+                        </form>
+                   </div>
+			   </div>
+			</div> 
+          		  
+				
 	</div>	
 	
 	<script src="./scripts/common.js"></script>
