@@ -7,13 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<!--path of css files -->
 	<link href="../styles/post.css" rel='stylesheet' type='text/css'>
 	<link href="../styles/common.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
-	<div class="headerElements">
+	<div class="postContainer">
+	    <div class="headerElements">
 		    <!--trigger the sign In modal -->
 			<input class="topButtons" id="SignIn" type="button" value="Sign In">
 			<!-- The Modal -->
@@ -82,12 +84,70 @@
                </div>
             </div>
 			
+			<!--Scribbler header here -->
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>		
-	</div>	
+			
+			
+	    </div>	
+	    <!--post content -->
+	    <div class="post-body">
+                <div class="postTitle">
+                    <p id="titleline" contenteditable="false" class="titleline">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+				</div>
+				<div class="authorName">
+				    <p class="name">Sristhi Gupta</p>
+                    <button type="submit" id="edit-btn" class="edit-Post-btn" onclick="editFun(this)">Edit <i class='fa fa-edit'></i></button>					
+				</div>
+                 <!--paragraph body and content -->   
+                <p id="para" contenteditable="false" class="para">Node.js treats each JavaScript file as a separate module. For instance, 
+				if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node,
+				and you can say that you’ve created a module named xyz. Though .js is the standard filename extension for JavaScript code, 
+				the name "Node.js" doesn't refer to a particular file in this context and is merely the name of the product. Node.js has 
+				an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability 
+				in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time 
+				communication programs and browser games). The Node.js distributed development project was previously governed by the 
+				Node.js Foundation, and has now merged with the JS Foundation to form the OpenJS Foundation, which is facilitated by the
+				Linux Foundation's Collaborative Projects program. Node.js allows the creation of Web servers and networking tools using
+				JavaScript and a collection of "modules" that handle various core functionalities. Modules are provided
+				for file system I/O, networking (DNS, HTTP, TCP, TLS/SSL, or UDP), binary data (buffers), cryptography functions, data 
+				streams, and other core functions. Node.js's modules use an API designed to reduce the complexity of writing
+				server applications. JavaScript is the only language that Node.js supports natively, but many compile-to-JS languages
+				are available. As a result, Node.js applications can be written in CoffeeScript, Dart, TypeScript, ClojureScript
+				and others. Node.js is primarily used to build network programs such as Web servers. The most significant difference 
+				between Node.js and PHP is that most functions in PHP block until completion (commands only execute after previous commands
+				finish), while Node.js functions are non-blocking (commands execute concurrently or even in parallel, and use 
+				callbacks to signal completion or failure). Node.js is officially supported on Linux, macOS and Microsoft Windows 8.1 
+				and Server 2012 (and later), with tier 2 support for SmartOS and IBM AIX and experimental support for FreeBSD. 
+				OpenBSD also works, and LTS versions available for IBM i (AS/400). The provided source code may also be built on 
+				similar operating systems to those officially supported or be modified by third parties to support others such as 
+				NonStop OS and Unix servers.</p>
+				
+				<!--like button content -->
+				<div>
+				   <button type="submit" id="likePost" class="like-Post-btn" onclick="likeFun(this.id)"><i class="fa fa-thumbs-up"></i> Like</button>
+				   <p id="likes-count" class="likes-count">Be the first one to like this!</p>
+				</div>
+				<!--comment button content -->
+				<div class="comment-area">
+				   <div class="comment-elements">
+				      <textarea rows="3" cols="90" class="userCommentBox" id="userComment" value="" name="comment" form="usrform" 
+					  placeholder="Leave a comment..."></textarea>
+                      <button class="comment-btn" onclick="addComment(userComment)">Comment</button>
+					  <p class="all-comments-title">All Comments</p>
+                      <ul id="addedCommentSection" class="addedCommentSection"></ul>
+					  
+				   </div>
+				   
+				</div> 
+                <div>
+                   
+                </div>				
+				
+        </div>
 
-
-    <!-- list of all posts ends here -->
+    </div>
+	<!--path of js files -->
 	<script src="../scripts/common.js"></script>
 	<script src="../scripts/post.js"></script>
 </body>
