@@ -1,17 +1,13 @@
 // Get the modal
-
 var createPostModal = document.getElementById("createPostModal");
-
-
-
 
 // Get the button that opens the modal
 var createPostBtn = document.getElementById("createPost");
 
-// Get the <span> element that closes the modal
+// Get the <span> x(cross) element that closes the modal
 var createPostSpan = document.getElementsByClassName("close")[2];
 
-// When the user clicks on the button, open the modal
+// When the user clicks on the button create post, open the modal
 createPostBtn.onclick = function() {
   createPostModal.style.display = "block";
 }

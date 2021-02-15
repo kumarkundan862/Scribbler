@@ -1,6 +1,95 @@
 
-
+.postContainer{
+	position:absolute;
+	padding-bottom: 20px;
+}
 
 body {
 	background-color:white;
+}
+.post-body{
+	margin:10% 2% 0% 2%;
+}
+
+.authorName{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+.name{
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+.postTitle{
+    font-weight: bold;
+	text-align: center;
+}
+
+.edit-Post-btn{
+	background-color: rgb(255, 0, 59);
+    width: 6%;;
+    width: 6%;
+	font-size: 13px;
+    padding: 0.6%;
+	
+}
+
+.like-Post-btn{
+	background-color: rgb(255, 0, 59);
+    width: 6%;;
+	width: 6%;
+	font-size: 13px;
+    padding: 0.6%;
+}
+
+.likes-count{
+	margin:0%;
+	color: grey;
+    font-family: ui-sans-serif;
+}
+
+.comment-area{
+	margin-top:2%;
+}
+
+.comment-elements{
+    display: flex;
+    flex-direction: column;
+}	
+
+.userCommentBox{
+	width:50%;
+	border-block-color: black;
+}
+
+.comment-btn{
+	margin-top:5px;
+	color: white;
+    background-color: rgb(255, 0, 150);
+    width: 6%;;
+    border: none;
+    padding: 0.3% 0.7% 0.3% 0.7%;
+	width: 7%;
+}
+.all-comments-title{
+	font-weight: bold;
+	margin-bottom: 0%;
+}
+
+.addedCommentSection{
+    background-color: lightgray;
+    width: 50%;	
+	list-style-type: none;
+	margin-top: 0%;
+	padding:0;
+	
+}
+
+li{
+	background-color: white;
+    color: black;
+    border-block: black;
+    padding: 10px;
+    margin: 10px 4px;
 }

@@ -17,7 +17,7 @@ signInBtn.onclick = function() {
 }
 
 
-// Get the <span> element that closes the modal
+// Get the <span> (x) element that closes the modal
 var signUpSpan = document.getElementsByClassName("close")[1];
 
 // When the user clicks on <span> (x), close the modal
@@ -27,7 +27,7 @@ signUpSpan.onclick = function() {
 
 
 
-// Get the <span> element that closes the modal
+// Get the <span> (x) element that closes the modal
 var signInSpan = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal

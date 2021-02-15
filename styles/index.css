@@ -1,4 +1,6 @@
-
+body{
+	margin:0%;
+}
 
 .modal-content-createPost{
   display:flex;

@@ -1,4 +1,7 @@
 
+.postsListContainer{
+	position:absolute;
+}
 
 body {
 	background-color:#ffeedd;
